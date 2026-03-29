@@ -3,18 +3,23 @@ name = "document-analyzer"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.13"
 dependencies = [
     "faiss-cpu<1.10.0",
     "langchain>=1.2.13",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.1",
+    "langchain-huggingface>=1.2.1",
     "langchain-mistralai>=1.1.2",
     "langchain-ollama>=1.0.1",
     "langchain-text-splitters>=1.1.1",
     "networkx>=3.6.1",
     "nltk>=3.9.4",
     "numpy<2",
+    "onnxruntime<1.20.0",
     "pdfplumber>=0.11.9",
-    "protobuf>=7.34.1",
+    "protobuf<3.21",
+    "pypdf>=6.9.2",
     "python-dotenv>=1.2.2",
     "sentence-transformers>=5.3.0",
     "sentencepiece>=0.2.1",
